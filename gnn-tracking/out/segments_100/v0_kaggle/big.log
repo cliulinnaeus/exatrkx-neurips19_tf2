@@ -1,0 +1,112 @@
+20 Feb 2020 16:09:53
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+20 Feb 2020 16:17:20
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+20 Feb 2020 16:27:39
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 13:37:26
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:10:50
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:32:10
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:42:20
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:45:31
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:47:11
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:57:38
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:58:12
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 15:59:11
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 16:00:38
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 16:13:57
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 16:27:48
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 16:28:49
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 16:33:21
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 16:33:47
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 16:37:31
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 17:03:50
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+27 Feb 2020 17:07:24
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+28 Feb 2020 16:36:29
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+# 00016, T 65.1, Ltr 0.1913, Lge 0.1817, Precision 0.0000, Recall 0.0000
+# 00021, T 133.9, Ltr 0.1887, Lge 0.1817, Precision 0.0000, Recall 0.0000
+03 Mar 2020 11:29:39
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+# 00004, T 77.2, Ltr 0.2647, Lge 0.2415, Precision 0.0000, Recall 0.0000
+# 00009, T 148.4, Ltr 0.2056, Lge 0.1933, Precision 0.0000, Recall 0.0000
+# 00014, T 217.9, Ltr 0.1984, Lge 0.1869, Precision 0.0000, Recall 0.0000
+# 00019, T 285.5, Ltr 0.1895, Lge 0.1810, Precision 0.0000, Recall 0.0000
+# 00024, T 352.3, Ltr 0.1858, Lge 0.1803, Precision 0.0000, Recall 0.0000
+# 00029, T 421.4, Ltr 0.1849, Lge 0.1777, Precision 0.0000, Recall 0.0000
+# 00034, T 488.2, Ltr 0.1833, Lge 0.1770, Precision 0.0000, Recall 0.0000
+# 00039, T 557.6, Ltr 0.1823, Lge 0.1764, Precision 0.0000, Recall 0.0000
+# 00044, T 625.0, Ltr 0.1815, Lge 0.1759, Precision 0.0000, Recall 0.0000
+# 00049, T 695.5, Ltr 0.1808, Lge 0.1754, Precision 0.0000, Recall 0.0000
+# 00054, T 763.1, Ltr 0.1801, Lge 0.1749, Precision 0.0000, Recall 0.0000
+# 00059, T 830.5, Ltr 0.1795, Lge 0.1745, Precision 0.0000, Recall 0.0000
+# 00064, T 900.5, Ltr 0.1789, Lge 0.1738, Precision 0.0000, Recall 0.0000
+# 00069, T 969.2, Ltr 0.1783, Lge 0.1734, Precision 0.0000, Recall 0.0000
+# 00074, T 1037.5, Ltr 0.1776, Lge 0.1729, Precision 0.0000, Recall 0.0000
+# 00079, T 1104.5, Ltr 0.1768, Lge 0.1724, Precision 0.0000, Recall 0.0000
+# 00084, T 1172.5, Ltr 0.1781, Lge 0.1731, Precision 0.0000, Recall 0.0000
+# 00089, T 1239.1, Ltr 0.1767, Lge 0.1720, Precision 0.0000, Recall 0.0000
+# 00094, T 1305.1, Ltr 0.1753, Lge 0.1725, Precision 0.0000, Recall 0.0000
+# 00099, T 1373.2, Ltr 0.1750, Lge 0.1718, Precision 0.0000, Recall 0.0000
+# 00104, T 1445.9, Ltr 0.1741, Lge 0.1716, Precision 0.0000, Recall 0.0000
+# 00107, T 1505.8, Ltr 0.1737, Lge 0.1715, Precision 0.0000, Recall 0.0000
+# 00112, T 1596.0, Ltr 0.1730, Lge 0.1715, Precision 0.0000, Recall 0.0000
+# 00117, T 1663.3, Ltr 0.1723, Lge 0.1718, Precision 0.2449, Recall 0.0017
+# 00122, T 1733.5, Ltr 0.1720, Lge 0.1712, Precision 0.2333, Recall 0.0010
+# 00124, T 1810.1, Ltr 0.1715, Lge 0.1719, Precision 0.1986, Recall 0.0041
+# 00129, T 1882.2, Ltr 0.1713, Lge 0.1720, Precision 0.2243, Recall 0.0034
+# 00134, T 1951.9, Ltr 0.1704, Lge 0.1727, Precision 0.1500, Recall 0.0060
+# 00139, T 2019.4, Ltr 0.1704, Lge 0.1720, Precision 0.1739, Recall 0.0034
+# 00144, T 2087.6, Ltr 0.1690, Lge 0.1709, Precision 0.2121, Recall 0.0010
+# 00149, T 2154.6, Ltr 0.1693, Lge 0.1718, Precision 0.2188, Recall 0.0010
+# 00154, T 2220.5, Ltr 0.1690, Lge 0.1721, Precision 0.1887, Recall 0.0014
+# 00159, T 2285.8, Ltr 0.1681, Lge 0.1716, Precision 0.2000, Recall 0.0033
+# 00164, T 2350.9, Ltr 0.1678, Lge 0.1722, Precision 0.2347, Recall 0.0033
+# 00169, T 2417.3, Ltr 0.1665, Lge 0.1721, Precision 0.1991, Recall 0.0065
+# 00174, T 2484.4, Ltr 0.1673, Lge 0.1724, Precision 0.1809, Recall 0.0078
+# 00179, T 2554.7, Ltr 0.1659, Lge 0.1723, Precision 0.1964, Recall 0.0077
+# 00184, T 2621.1, Ltr 0.1655, Lge 0.1719, Precision 0.1795, Recall 0.0129
+# 00189, T 2687.9, Ltr 0.1655, Lge 0.1764, Precision 0.1837, Recall 0.0935
+# 00194, T 2755.2, Ltr 0.1687, Lge 0.1722, Precision 0.2143, Recall 0.0055
+# 00199, T 2827.1, Ltr 0.1655, Lge 0.1726, Precision 0.2198, Recall 0.0057
+# 00204, T 2897.6, Ltr 0.1648, Lge 0.1736, Precision 0.1867, Recall 0.0119
+# 00209, T 2963.9, Ltr 0.1640, Lge 0.1736, Precision 0.1926, Recall 0.0147
+# 00214, T 3029.7, Ltr 0.1638, Lge 0.1748, Precision 0.1974, Recall 0.0043
+# 00219, T 3094.5, Ltr 0.1640, Lge 0.1743, Precision 0.1794, Recall 0.0197
+# 00224, T 3160.4, Ltr 0.1636, Lge 0.1748, Precision 0.2548, Recall 0.0057
+# 00229, T 3224.0, Ltr 0.1638, Lge 0.1729, Precision 0.1944, Recall 0.0218
+# 00234, T 3287.0, Ltr 0.1624, Lge 0.1731, Precision 0.2316, Recall 0.0089
+# 00239, T 3349.0, Ltr 0.1620, Lge 0.1716, Precision 0.2007, Recall 0.0259
+# 00244, T 3411.6, Ltr 0.1616, Lge 0.1725, Precision 0.2085, Recall 0.0543
+03 Mar 2020 14:52:30
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+03 Mar 2020 14:55:31
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+03 Mar 2020 14:56:50
+# (iteration number), T (elapsed seconds), Ltr (training loss), Precision, Recall
+# 00004, T 79.8, Ltr 0.2840, Lge 0.2475, Precision 0.0000, Recall 0.0000
+# 00009, T 153.0, Ltr 0.2060, Lge 0.1928, Precision 0.0000, Recall 0.0000
+# 00014, T 224.5, Ltr 0.2009, Lge 0.1895, Precision 0.0000, Recall 0.0000
+# 00019, T 295.5, Ltr 0.1920, Lge 0.1835, Precision 0.0000, Recall 0.0000
+# 00024, T 365.5, Ltr 0.1879, Lge 0.1806, Precision 0.0000, Recall 0.0000
+# 00029, T 432.7, Ltr 0.1853, Lge 0.1789, Precision 0.0000, Recall 0.0000
+# 00034, T 502.2, Ltr 0.1836, Lge 0.1780, Precision 0.0000, Recall 0.0000
+# 00038, T 562.3, Ltr 0.1826, Lge 0.1772, Precision 0.0000, Recall 0.0000
