@@ -1,13 +1,13 @@
 track_ml:
-    dir:           ./inputdata/train_100_events
+    dir:        /global/u1/c/cheliu/exatrkx-neurips19_tf2/gnn-tracking/inputdata/train_100_events
 #    blacklist_dir: ./inputdata/blacklist
     detector: ./inputdata/detectors.csv
     layers: [7, 8, 9, 10, 24, 25, 26, 27, 40, 41]
 
 data:
     name: hitgraphs
-    input_hitsgraph_dir: ./out/hitgraphs_100
-    output_nxgraph_dir: ./out/nxgraphs_100
+    input_hitsgraph_dir: ../out/hitgraphs_100
+    output_nxgraph_dir: ../out/nxgraphs_100
     log_name: data_process.log
     n_tasks: 1
     n_workers: 24
@@ -21,10 +21,10 @@ selection:
     eta_range: [-5, 5]
 
 make_graph:
-    out_graph: ./out/nxgraphs_100
+    out_graph: ../out/nxgraphs_100
 
 segment_training:
-    output_dir: ./out/segments_100
+    output_dir: ../out/segments_100
     model_name: default
     prod_name: v0_kaggle
     log_name: big.log

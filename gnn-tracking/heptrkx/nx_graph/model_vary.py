@@ -25,7 +25,7 @@ def make_mlp_model():
                       activate_final=True)
 
 
-class InteractionNetwork(snt.AbstractModule):
+class InteractionNetwork(snt.Module):
   """Implementation of an Interaction Network.
 
   An interaction networks computes interactions on the edges based on the
@@ -40,7 +40,7 @@ class InteractionNetwork(snt.AbstractModule):
   def __init__(self,
                edge_model_fn,
                node_model_fn,
-               reducer=tf.unsorted_segment_sum,
+               reducer=tf.math.unsorted_segment_sum,
                name="interaction_network"):
     """Initializes the InteractionNetwork module.
 
@@ -87,7 +87,7 @@ class InteractionNetwork(snt.AbstractModule):
     """
     return self._edge_block(self._node_block(graph))
 
-class SegmentClassifier(snt.AbstractModule):
+class SegmentClassifier(snt.Module):
 
     def __init__(self, name="SegmentClassifier"):
         super(SegmentClassifier, self).__init__(name=name)

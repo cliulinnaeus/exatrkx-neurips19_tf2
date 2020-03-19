@@ -30,7 +30,7 @@ def make_mlp_model():
           activate_final=True),
   ])
 
-class MLPGraphIndependent(snt.AbstractModule):
+class MLPGraphIndependent(snt.Module):
   """GraphIndependent with MLP edge, node, and global models."""
 
   def __init__(self, name="MLPGraphIndependent"):
@@ -45,12 +45,12 @@ class MLPGraphIndependent(snt.AbstractModule):
     return self._network(inputs)
 
 
-class InteractionNetwork(snt.AbstractModule):
+class InteractionNetwork(snt.Module):
 
   def __init__(self,
                edge_model_fn,
                node_model_fn,
-               reducer=tf.unsorted_segment_sum,
+               reducer=tf.math.unsorted_segment_sum,
                name="interaction_network"):
     super(InteractionNetwork, self).__init__(name=name)
 
@@ -69,7 +69,7 @@ class InteractionNetwork(snt.AbstractModule):
 
 
 
-class SegmentClassifier(snt.AbstractModule):
+class SegmentClassifier(snt.Module):
 
   def __init__(self, name="SegmentClassifier"):
     super(SegmentClassifier, self).__init__(name=name)

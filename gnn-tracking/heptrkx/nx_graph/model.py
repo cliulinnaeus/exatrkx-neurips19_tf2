@@ -27,57 +27,56 @@ def make_mlp_model():
       #snt.LayerNorm()
   ])
 
-class MLPGraphIndependent(snt.AbstractModule):
+class MLPGraphIndependent(snt.Module):
   """GraphIndependent with MLP edge, node, and global models."""
 
   def __init__(self, name="MLPGraphIndependent"):
     super(MLPGraphIndependent, self).__init__(name=name)
-    with self._enter_variable_scope():
-      self._network = modules.GraphIndependent(
-          edge_model_fn=make_mlp_model,
-          node_model_fn=make_mlp_model,
-          global_model_fn=None)
+    
+    self._network = modules.GraphIndependent(
+        edge_model_fn=make_mlp_model,
+        node_model_fn=make_mlp_model,
+        global_model_fn=None)
 
   def _build(self, inputs):
     return self._network(inputs)
 
-class SegmentClassifier(snt.AbstractModule):
+class SegmentClassifier(snt.Module):
 
-  def __init__(self, name="SegmentClassifier"):
-    super(SegmentClassifier, self).__init__(name=name)
+    def __init__(self, name="SegmentClassifier"):
+        super(SegmentClassifier, self).__init__(name=name)
 
-    self._encoder = MLPGraphIndependent()
+        self._encoder = MLPGraphIndependent()
 
-    self._core = modules.InteractionNetwork(
-        edge_model_fn=make_mlp_model,
-        node_model_fn=make_mlp_model,
-        reducer=tf.unsorted_segment_sum
-    )
+        self._core = modules.InteractionNetwork(
+            edge_model_fn=make_mlp_model,
+            node_model_fn=make_mlp_model,
+            reducer=tf.math.unsorted_segment_sum
+        )
 
-    self._decoder = modules.GraphIndependent(
-        edge_model_fn=make_mlp_model,
-        node_model_fn=None, global_model_fn=None)
+        self._decoder = modules.GraphIndependent(
+            edge_model_fn=make_mlp_model,
+            node_model_fn=None, global_model_fn=None)
 
-    # Transforms the outputs into appropriate shapes.
-    edge_output_size = 1
-    edge_fn =lambda: snt.Sequential([
-        snt.nets.MLP([LATENT_SIZE, edge_output_size],
-                     activation=tf.nn.relu, # default is relu
-                     name='edge_output'),
-        tf.sigmoid])
+        # Transforms the outputs into appropriate shapes.
+        edge_output_size = 1
+        edge_fn =lambda: snt.Sequential([
+            snt.nets.MLP([LATENT_SIZE, edge_output_size],
+                         activation=tf.nn.relu, # default is relu
+                         name='edge_output'),
+            tf.sigmoid])
 
-    with self._enter_variable_scope():
-      self._output_transform = modules.GraphIndependent(edge_fn, None, None)
+        self._output_transform = modules.GraphIndependent(edge_fn, None, None)
 
-  def _build(self, input_op, num_processing_steps):
-    latent = self._encoder(input_op)
-    latent0 = latent
+    def _build(self, input_op, num_processing_steps):
+        latent = self._encoder._build(input_op)
+        latent0 = latent
 
-    output_ops = []
-    for _ in range(num_processing_steps):
-        core_input = utils_tf.concat([latent0, latent], axis=1)
-        latent = self._core(core_input)
+        output_ops = []
+        for _ in range(num_processing_steps):
+            core_input = utils_tf.concat([latent0, latent], axis=1)
+            latent = self._core(core_input)
 
-        decoded_op = self._decoder(latent)
-        output_ops.append(self._output_transform(decoded_op))
-    return output_ops
+            decoded_op = self._decoder._build(latent)
+            output_ops.append(self._output_transform(decoded_op))
+        return output_ops
